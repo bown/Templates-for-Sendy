@@ -6,7 +6,7 @@
 			    	<label class="control-label" for="name">Template Name</label>
 			    	<div class="control-group">
 				    	<div class="controls">
-			              <input type="text" class="input-xlarge" id="name" name="name" placeholder="[country]_sendy_*">
+			              <input type="text" class="input-xlarge" id="name" name="name" placeholder="Template name">
 			            </div>
 			        </div>
 			        <input type="hidden" name="id" value="<?php echo $_GET['i'];?>">
