@@ -27,7 +27,7 @@
 			        </div>  
 			 		</form>
 			        <?php } else { ?>
-				    	<p>No Templates Available</p>
+				    	<p>No Templates Available, you need to create one first!</p>
 				    <?php } ?>
 			        
 		</div>
