@@ -1,0 +1,6 @@
+<ul class="nav nav-list">
+        <li class="nav-header">Templates</li>
+        <li <?php if(currentPage()=='templates.php' && $_GET['do'] !== "create" && $_GET['do'] !== "campaign"){echo 'class="active"';}?>><a href="<?php echo get_app_info('path').'/templates?i='.$_GET['i'];?>"><i class="icon-align-justify  <?php if(currentPage()=='templates.php' && $_GET['do'] !== "create" && $_GET['do'] !== "campaign"){echo 'icon-white';}?>"></i> All templates</a></li>
+        <li <?php if(currentPage()=='templates.php' && $_GET['do'] == "create"){echo 'class="active"';}?>><a href="<?php echo get_app_info('path').'/templates.php?i='.$_GET['i'].'&do=create';?>"><i class="icon-edit  <?php if(currentPage()=='templates.php' && $_GET['do'] == "create"){echo 'icon-white';}?>"></i> Create template</a></li>
+        <li <?php if(currentPage()=='templates.php' && $_GET['do'] == "campaign"){echo 'class="active"';}?>><a href="<?php echo get_app_info('path').'/templates.php?i='.$_GET['i'].'&do=campaign';?>"><i class="icon-edit  <?php if(currentPage()=='templates.php' && $_GET['do'] == "campaign"){echo 'icon-white';}?>"></i> Create Template Campaign</a></li>
+</ul>
