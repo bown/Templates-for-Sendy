@@ -18,11 +18,11 @@ Included in this project is an 'install.sql' file, this is required to save temp
 
 ### Add Files through FTP
 
-Firstly, make a copy of the 'create.php' that already exists in your Sendy installation and upload the 'template' folder, 'create.php' and 'templates.php'
+Firstly, make a copy of the 'create.php' that already exists in your Sendy installation and upload the 'template' folder, 'create.php' and 'templates.php' from this project, note that uploading will prompt to overwrite 'create.php', choose yes as you've made a copy of the original.
 
 ### Add Templates to sidebar
 
-In order to access Templates, add the following code snippet just before the last '</div>' in 'sidebar.php' located in '/includes/'
+In order to access Templates, add the following code snippet just before the last closing DIV in 'sidebar.php' located in '/includes/'
 
 `<?php include("template/sidebar.php");?>`
 
