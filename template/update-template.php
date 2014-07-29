@@ -6,6 +6,6 @@
 	
 
 	$query = mysql_query("UPDATE templates set name = '$templateName', content = '$templateHtml' WHERE id = '$templateId'") or die(mysql_errno());
-	header("Location: /edit-template?i=$app&template=$templateId"); 
+	header("Location:".get_app_info('path').'/edit-template?i='.$app.'&template='.$templateId); 
 
 ?>
