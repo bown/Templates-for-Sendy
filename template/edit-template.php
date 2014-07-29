@@ -19,7 +19,7 @@
 	    	<h2>Editing: <i><?php echo $tname;?></i></h2><br/>
     	</div>
     	<div class="row-fluid">
-    		<form action="<?php echo get_app_info('path')?>/includes/create/update-template.php?i=<?php echo get_app_info('app')?>" method="POST" accept-charset="utf-8" class="form-vertical" id="edit-form" enctype="multipart/form-data">
+    		<form action="<?php echo get_app_info('path')?>/template/update-template.php?i=<?php echo get_app_info('app')?>" method="POST" accept-charset="utf-8" class="form-vertical" id="edit-form" enctype="multipart/form-data">
 			    <div class="span3">
 				    
 			    	<label class="control-label" for="name">Template Name</label>
