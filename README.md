@@ -24,14 +24,14 @@ Firstly, make a copy of the 'create.php' that already exists in your Sendy insta
 
 In order to access Templates, add the following code snippet just before the last closing DIV in 'sidebar.php' located in '/includes/'
 
-`<?php include("template/sidebar.php");?>`
+    <?php include("template/sidebar.php");?>`
 
 ### Add rule to .htaccess
 
 Add the following to the end of the '.htaccess' file located in the sendy folder.
 
-`# template
-RewriteRule ^templates/(.*)$ templates.php?i=$1 [L]`
+    # template
+    RewriteRule ^templates/(.*)$ templates.php?i=$1 [L]
 
 ### Complete! 
 
