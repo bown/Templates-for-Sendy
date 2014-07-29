@@ -1,7 +1,9 @@
 <?php include('../includes/functions.php');?>
 <?php include('../includes/login/auth.php');?>
 <?php
-	$templateHtml = mysqli_real_escape_string($mysqli, $_POST['html']);
+	$templateHtml = stripslashes($_POST['html']);
+	if(trim($templateHtml)=='<html><head></head><body></body></html>') $templateHtml = '';
+    $templateHtml = addslashes($templateHtml);
 	$templateName = mysqli_real_escape_string($mysqli, $_POST['name']);
 	$app = mysqli_real_escape_string($mysqli, $_POST['id']);
 	
