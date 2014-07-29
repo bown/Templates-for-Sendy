@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS `templates` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(64) NOT NULL,
-  `content` blob NOT NULL,
+  `content` mediumtext NOT NULL,
   `active` tinyint(1) NOT NULL DEFAULT '1',
   `uid` int(11) NOT NULL,
   PRIMARY KEY (`id`)
