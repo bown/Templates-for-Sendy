@@ -26,6 +26,13 @@ In order to access Templates, add the following code snippet just before the las
 
 `<?php include("template/sidebar.php");?>`
 
+### Add rule to .htaccess
+
+Add the following to the end of the '.htaccess' file located in the sendy folder.
+
+`# template
+RewriteRule ^templates/(.*)$ templates.php?i=$1 [L]`
+
 ### Complete! 
 
 You can now create templates in Sendy!
