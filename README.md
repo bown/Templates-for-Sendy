@@ -1,7 +1,7 @@
 Templates for Sendy
 ===========
 
-**Version: 1.0.1**
+**Version: 1.0.2**
 
 > **Create and save HTML templates in Sendy to use in campaigns.**
 
