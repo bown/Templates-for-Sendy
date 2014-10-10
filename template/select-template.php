@@ -8,7 +8,7 @@
     	$r = mysqli_query($mysqli, $q);
 				if(mysqli_num_rows($r) > 0) {
     	?>
-    		<form action="<?php echo get_app_info('path').'/create?i='.$_GET['i'];?>" method="POST" accept-charset="utf-8" class="form-vertical" id="edit-form" enctype="multipart/form-data">
+    		<form action="<?php echo get_app_info('path').'/template_create.php?i='.$_GET['i'];?>" method="POST" accept-charset="utf-8" class="form-vertical" id="edit-form" enctype="multipart/form-data">
 			    <div class="span3">
 			        <label class="control-label" for="attachments">Template Name</label>
 		            <div class="control-group">
