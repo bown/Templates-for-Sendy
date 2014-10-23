@@ -35,8 +35,6 @@
 			    </div>   
 			    <div class="span9">
 			    	<p>
-				    	<label class="control-label" for="html"><?php echo _('HTML code');?></label>
-						<br/>
 			            <div class="control-group">
 					    	<div class="controls">
 				              <textarea class="input-xlarge" id="html" name="html" rows="10" placeholder="Email content"><?php echo $tbody; ?></textarea>
