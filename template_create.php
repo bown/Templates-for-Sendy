@@ -124,37 +124,6 @@
 			    </div>   
 			    <div class="span9">
 			    	<p>
-				    	<label class="control-label" for="html"><?php echo _('HTML code');?></label>
-				    	<div class="btn-group">
-				    	<button class="btn" id="toggle-wysiwyg"><?php echo _('Save and switch to HTML editor');?></button> 
-				    	<span class="wysiwyg-note"><?php echo _('Switch to HTML editor if the WYSIWYG editor is causing your newsletter to look weird.');?></span>
-						<script type="text/javascript">
-							$("#toggle-wysiwyg").click(function(e){
-								e.preventDefault();
-								
-								$('<input>').attr({
-								    type: 'hidden',
-								    id: 'wysiwyg',
-								    name: 'wysiwyg',
-								    value: '0',
-								}).appendTo("#edit-form");
-								
-								$('<input>').attr({
-								    type: 'hidden',
-								    id: 'w_clicked',
-								    name: 'w_clicked',
-								    value: '1',
-								}).appendTo("#edit-form");
-								
-								$("#subject").rules("remove");
-								$("#html").rules("remove");
-								if($("#subject").val()=="") $("#subject").val("Untitled");
-								
-								$("#edit-form").submit();
-							});
-						</script>
-						</div>
-						<br/>
 			            <div class="control-group">
 					    	<div class="controls">
 				              <textarea class="input-xlarge" id="html" name="html" rows="10" placeholder="Email content"><?php if($t == 1) { echo $content; } ?></textarea>
