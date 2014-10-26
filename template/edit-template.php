@@ -14,6 +14,8 @@
 	}
 ?>
 
+<script src="<?php echo get_app_info('path');?>/js/ckeditor/ckeditor.js?7"></script>
+<script src="<?php echo get_app_info('path');?>/js/create/editor.js?7"></script>
 
 <div class="row-fluid">
 	    	<h2>Editing: <i><?php echo $tname;?></i></h2><br/>
