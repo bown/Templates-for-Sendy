@@ -1,3 +1,6 @@
+<script src="<?php echo get_app_info('path');?>/js/ckeditor/ckeditor.js?7"></script>
+<script src="<?php echo get_app_info('path');?>/js/create/editor.js?7"></script>
+
 <div class="row-fluid">
 	<h2>Create Templates</h2><br/>
     		<form action="<?php echo get_app_info('path')?>/template/save-template.php?i=<?php echo get_app_info('app')?>" method="POST" accept-charset="utf-8" class="form-vertical" id="create-template" enctype="multipart/form-data">
@@ -15,36 +18,6 @@
 			    </div>   
 			    <div class="span9">
 			    	<p>
-				    	<label class="control-label" for="html"><?php echo _('HTML code');?></label>
-				    	<div class="btn-group">
-				    	<span class="wysiwyg-note">The HTML may look odd in this editor, open it in the campaign to see how it actually looks.</span>
-						<script type="text/javascript">
-							$("#toggle-wysiwyg").click(function(e){
-								e.preventDefault();
-								
-								$('<input>').attr({
-								    type: 'hidden',
-								    id: 'wysiwyg',
-								    name: 'wysiwyg',
-								    value: '0',
-								}).appendTo("#edit-form");
-								
-								$('<input>').attr({
-								    type: 'hidden',
-								    id: 'w_clicked',
-								    name: 'w_clicked',
-								    value: '1',
-								}).appendTo("#edit-form");
-								
-								$("#subject").rules("remove");
-								$("#html").rules("remove");
-								if($("#subject").val()=="") $("#subject").val("Untitled");
-								
-								$("#edit-form").submit();
-							});
-						</script>
-						</div>
-						<br/>
 			            <div class="control-group">
 					    	<div class="controls">
 				              <textarea class="input-xlarge" id="html" name="html" rows="10" placeholder="Email content"></textarea>

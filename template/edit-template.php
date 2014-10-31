@@ -14,6 +14,8 @@
 	}
 ?>
 
+<script src="<?php echo get_app_info('path');?>/js/ckeditor/ckeditor.js?7"></script>
+<script src="<?php echo get_app_info('path');?>/js/create/editor.js?7"></script>
 
 <div class="row-fluid">
 	    	<h2>Editing: <i><?php echo $tname;?></i></h2><br/>
@@ -35,8 +37,6 @@
 			    </div>   
 			    <div class="span9">
 			    	<p>
-				    	<label class="control-label" for="html"><?php echo _('HTML code');?></label>
-						<br/>
 			            <div class="control-group">
 					    	<div class="controls">
 				              <textarea class="input-xlarge" id="html" name="html" rows="10" placeholder="Email content"><?php echo $tbody; ?></textarea>
